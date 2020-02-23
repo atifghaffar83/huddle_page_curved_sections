@@ -28,6 +28,7 @@ h3 {
 
     margin-right: 0px;
     margin-left: 0px;
+    margin: 0;
 }
 
 .container-fluid {
@@ -156,8 +157,8 @@ p {
 
 
 .btnmargin {
-    margin-top: 1rem;
-    margin-bottom: 5.625rem;
+    margin: 16px 0 100px;
+    /* margin-bottom: 5.625rem; */
 }
 
 .left-align {
@@ -175,13 +176,59 @@ width: 100%;
 
 
 .bg-footer-2 {
-    padding: 5% 7% 0;
+    padding: 0 7% 0;
     background-color: #00252E;
     text-align: left;
     /* line-height: 2rem; */
     font-size: 1rem;
 
 }
+
+/* #bg-curve-top .atif::before {
+    content: url(..//images/bg-footer-top-desktop.svg);
+    background: url(..//images/bg-footer-top-desktop.svg);
+    background-color: #51c4e0;
+    background-size: contain;
+
+        max-width: 100%;
+
+
+    position: relative;
+    display: block;
+
+    background-repeat: no-repeat;
+    clear: left;
+} */
+
+#bg-curve-top::after {
+    content: "";
+    background-image: url(..//images/bg-footer-top-desktop.svg);
+    background-size: cover;
+    width: 100%;
+    display: block;
+    /* background-color: grey; */
+    padding: 96px 0 113px 0;
+    background-repeat: no-repeat;
+    /* content:url("..//images/bg-footer-top-desktop.svg");
+    display: block;
+    line-height: 0;
+    width: 100%; */
+}
+
+    /* background: url("..//images/bg-footer-top-desktop.svg");
+    background-color: #4cbbd6;
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+    margin: 0 -1px;
+    padding: 10px 0;
+    position: relative;
+    display:  block;
+    background-repeat: no-repeat;
+    line-height: 0;
+    background-image: url();
+    content:  */
+
 
 .footer-1-margin-p {
     padding: 0 28% 0 2%;
@@ -230,6 +277,7 @@ width: 100%;
     border:1px solid #ee1eb5;
     width: 20%;
 }
+
 
 .input {
     line-height: 2.5rem;

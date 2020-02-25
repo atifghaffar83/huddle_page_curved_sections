@@ -26,8 +26,6 @@ h3 {
 
 .row {
 
-    margin-right: 0px;
-    margin-left: 0px;
     margin: 0;
 }
 
@@ -88,18 +86,26 @@ p {
 
 .middle-1 {
 
-    padding: 0 12%;
+    padding: 0 15%;
     line-height: 2rem;
     background-color: #F6FBFF;
 
 }
 
+.margin-width {
+    width: 40%;
+}
+
 .middle-1-margin {
     padding-left: 1rem;
+    /* vertical-align: middle; */
+    padding: 10% 0;
+
+
 }
 
 .middle-1-margin-p {
-    padding: 0 15%;
+    padding: 0;
     text-align: left;
 
 }
@@ -107,11 +113,13 @@ p {
 .middle-1-margin-h1 {
     text-align: left;
     line-height: 4.5rem;
-    padding: 0 15%;
+    padding: 0;
 }
 
 .middle-1-img {
-    width: 60%;
+    width: 40%;
+    float: right;
+    margin-left: 5%;
 
 }
 
@@ -119,13 +127,25 @@ p {
 
 .middle-2 {
 
-    padding: 2rem 12%;
+    padding: 10rem 15%;
     line-height: 2rem;
+
 }
 
 
-.middle-2 img {
-    width: 60%;
+.middle-2-margin {
+    padding-left: 1rem;
+    /* vertical-align: middle; */
+    padding: 10% 0;
+
+
+
+}
+
+.middle-2-img {
+    width: 40%;
+    float: left;
+    margin-right: 20%;
 
 }
 
@@ -184,21 +204,6 @@ width: 100%;
 
 }
 
-/* #bg-curve-top .atif::before {
-    content: url(..//images/bg-footer-top-desktop.svg);
-    background: url(..//images/bg-footer-top-desktop.svg);
-    background-color: #51c4e0;
-    background-size: contain;
-
-        max-width: 100%;
-
-
-    position: relative;
-    display: block;
-
-    background-repeat: no-repeat;
-    clear: left;
-} */
 
 #bg-curve-top::after {
     content: "";
@@ -206,28 +211,11 @@ width: 100%;
     background-size: cover;
     width: 100%;
     display: block;
-    /* background-color: grey; */
+
     padding: 96px 0 113px 0;
     background-repeat: no-repeat;
-    /* content:url("..//images/bg-footer-top-desktop.svg");
-    display: block;
-    line-height: 0;
-    width: 100%; */
-}
 
-    /* background: url("..//images/bg-footer-top-desktop.svg");
-    background-color: #4cbbd6;
-    background-size: contain;
-    height: 100%;
-    width: 100%;
-    margin: 0 -1px;
-    padding: 10px 0;
-    position: relative;
-    display:  block;
-    background-repeat: no-repeat;
-    line-height: 0;
-    background-image: url();
-    content:  */
+}
 
 
 .footer-1-margin-p {
@@ -374,4 +362,50 @@ width: 100%;
 }.btnlg:active {
 	position:relative;
 	top:1px;
+}
+
+/************************ Media Queries ************************/
+
+@media (max-width:500px) {
+    body {
+        color:#fe8484;
+
+}
+
+
+    .p-width {
+        margin: 30px 2rem;
+    }
+
+    .mockups {
+        width: 95%;
+    }
+
+
+    .middle-1 {
+
+        padding: 0 5%;
+
+    }
+
+    .middle-1-margin {
+        padding: 1rem;
+    }
+
+    .middle-1-margin-p {
+        padding: 0;
+        text-align: center;
+
+    }
+
+    .middle-1-margin-h1 {
+        text-align: center;
+        padding: 0;
+        font-size: 1.5rem;
+    }
+
+    .middle-1-img {
+        width: 94%;
+
+    }
 }
